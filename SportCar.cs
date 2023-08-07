@@ -8,18 +8,21 @@
         }
 
         public override void Drive() =>
-            Console.WriteLine($"The {Color} sports car can move at a speed of {Speed} km/h");
+            Console.WriteLine($"The sports car is moving at a speed of {Speed} km/h");
 
-        public void RecycleToMetal() => 
-            Console.WriteLine($"The amount of metal received from the car is {Weight} kg.");
+        public void RecycleToMetal()
+        {
+            double metalWeight = Weight * 0.7;
+
+            Console.WriteLine($"The amount of metal received from the sports car is {metalWeight} kg.");
+        }
 
         public override void CarryPassengers() =>
-            Console.WriteLine("The sports car can carry one passenger");
+            Console.WriteLine("The sports car carrying one passenger");
 
         public override void Park() =>
-            Console.WriteLine("The spotr car can be parked in any car park");
+            Console.WriteLine("The sports car is parked in any parking lot");
 
-
-        public void Drift() => Console.WriteLine($"Drift on {Color} sport car is fun");
+        public void Drift() => Console.WriteLine($"Drift on sports car is fun");
     }
 }

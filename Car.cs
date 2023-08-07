@@ -13,6 +13,9 @@
             Weight = weight;
         }
 
+        public void GetInfo() =>
+            Console.WriteLine($"Car color: {Color}, max speed: {Speed} km/h, weight: {Weight} kg.");
+
         public abstract void Drive();
 
         public abstract void CarryPassengers();
